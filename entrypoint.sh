@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Iniciamos servicios necesarios
 dbus-daemon --system --fork && service ssh start
 
