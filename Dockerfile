@@ -47,7 +47,7 @@ RUN useradd -m -s /bin/bash $USER && \
 RUN mkdir /var/run/sshd && \
     # Permite la autenticación por contraseña para el usuario creado
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
-    sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
+    sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
 
 # Configura VNC para el usuario
 # Se hará en el script de entrada para asegurar permisos correctos al iniciar
